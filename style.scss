@@ -5,6 +5,8 @@ $complementary-dark:#D3B974;
 $grey:#C4C4C4;
 $text-and-borders: black;
 $font-base: 'Open Sans', sans-serif;
+$spacer: 30px;
+$border-width: 1px;
 
 html {
     box-sizing: border-box;
@@ -15,15 +17,22 @@ html {
   }
 
 body{
-    border: 2px solid $text-and-borders;
+    border: $border-width solid $text-and-borders;
     font-family: $font-base;
     font-weight: 300;
     margin: 0;
+    font-size: 25px;
+}
+main{
+    padding: 0 $spacer / 2;
+    text-align: center;
 }
 h2{
+    margin: 0;
     font-weight: 500;
     font-size: 30px;
     text-transform: uppercase;
+    margin-bottom: $spacer / 2;
 }
 .header__div{
     width: 100%;
@@ -32,8 +41,8 @@ h2{
 }
 
 .menu{
-    border-top: 2px solid $text-and-borders;
-    border-bottom: 2px solid $text-and-borders;
+    border-top: $border-width solid $text-and-borders;
+    border-bottom: $border-width solid $text-and-borders;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,13 +53,13 @@ h2{
         flex: 1 1 auto;  
 }       
             &__item:hover{
-            border-left: 2px solid $text-and-borders;
-            border-right: 2px solid $text-and-borders;
+            border-left: $border-width solid $text-and-borders;
+            border-right: $border-width solid $text-and-borders;
 }
 }
 
 .footer{
-    border-top: 2px solid $text-and-borders;
+    border-top: $border-width solid $text-and-borders;
     
     &__text{
     font-weight: 500;
@@ -59,4 +68,64 @@ h2{
     text-transform: uppercase;
     margin: 10px auto;
 }
+}
+
+.calendar{
+    width: 100%;
+    border: $border-width solid $text-and-borders;
+    padding-top: $spacer;
+    margin: $spacer 0;  
+    &__title{
+        border-bottom: $border-width solid $text-and-borders;
+        padding-bottom: $spacer;
+    }
+}
+    
+.to_do{
+    border: $border-width solid $text-and-borders;
+    margin: 0;
+    padding: $spacer 0;
+    margin: $spacer 0;
+    
+    &__table{
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        border-spacing: $spacer / 3;
+    }
+        &__table-field{
+            border: $border-width solid $text-and-borders;
+            padding: 8px $spacer / 2;
+    }
+
+}
+
+.places{
+    border: $border-width solid $text-and-borders;
+    margin: 0;
+    padding: $spacer 0;
+    margin: $spacer 0;
+    
+    &__table{
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        border-spacing: $spacer / 3;
+}
+    &__table-field{
+        border: $border-width solid $text-and-borders;
+        padding: 7px $spacer / 2;
+    }
+}
+
+.map {
+    border: $border-width solid $text-and-borders;
+    margin: 0;
+    padding-top: $spacer;
+    margin: $spacer 0;  
+    width: 100%;
+   
+    &__input{
+        width: 100%;
+    }
 }
