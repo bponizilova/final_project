@@ -12,35 +12,96 @@
 </head>
 <body>
     <header class="header">
-        <img class="header--img" src="" alt="">
+        <div class="header__div">
+        </div>
     </header>
 
     <nav class="menu">
 
-            <a class="menuitem" href="/">Přehled</a>
-            <a class="menuitem" href="/">Fotogalerie</a>
-            <a class="menuitem" href="/">Recepty</a>
-            <a class="menuitem" href="/">Deník</a>
+            <a class="menu__item" href="/"> <img class="menu__img" src="/images/home.svg" alt="home"></a>
+            <a class="menu__item" href="/"> <img class="menu__img" src="/images/album.svg" alt="album"></a>
+            <a class="menu__item" href="/"> <img class="menu__img" src="/images/fork-and-spoon.svg" alt="fork-and-spoon"></a>
+            <a class="menu__item" href="/"> <img class="menu__img" src="/images/note.svg" alt="note"></a>
     </nav>
     
     <main class="main">
 
         <div class="calendar">
-            <h2 class="calendar--title">Kalendář</h2>
+            <h2 class="calendar__title">Kalendář</h2>
+            <iframe class="calendar__import" src="https://calendar.google.com/calendar/embed?src=doprdelkynafialky%40gmail.com&ctz=Europe%2FPrague" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
+
         <div class="to_do">
-            <h2 class="to_do--title">Seznam ůkolů</h2>
+            <h2 class="to_do__title">Seznam úkolů</h2>
+            <div class="to_do__table_div">
+                <table class="to_do__table">
+                    <tr>
+                        <td>X</td>
+                        <td><strong>MA:</strong> Jahody</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td><strong>TA:</strong> Auto</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td><strong>HA:</strong> Klíče</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td><strong>TA:</strong> Nákup</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td><strong>MT:</strong> Trénink</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td><strong>MK:</strong> Kytky</td>
+                    </tr>
+                </table>
+            </div>
         </div>
+
         <div class="places">
-            <h2 class="places--title">Místa</h2>
+            <h2 class="places__title">Místa</h2>
+            <div class="places__table_div">
+                <table class="places__table">
+                    <tr>
+                        <td class="places__table-field MA">MA</td>
+                        <td>Doma</td>
+                    </tr>
+                    <tr>
+                        <td class="places__table-field TA">TA</td>
+                        <td>Doma</td>
+                    </tr>
+                    <tr>
+                        <td class="places__table-field HA">HA</td>
+                        <td>Praha</td>
+                    </tr>
+                    <tr>
+                        <td class="places__table-field BA">BA</td>
+                        <td>Zlín</td>
+                    </tr>
+                    <tr>
+                        <td class="places__table-field MT">MT</td>
+                        <td>Olomouc</td>
+                    </tr>
+                    <tr>
+                        <td class="places__table-field MK">MK</td>
+                        <td>Zlín</td>
+                    </tr>
+                </table>
+             </div>
         </div>
+           
         <div class="map">
-            <h2 class="map--title">Mapa</h2>
+            <h2 class="map__title">Mapa</h2>
         </div>
     </main>
 
     <footer class="footer">
-        <p class="footer--text">
+        <p class="footer__text">
         2022 Zlín
         </p>
     </footer>
