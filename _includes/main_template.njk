@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title> {{title}} </title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__div">
+        </div>
+    </header>
+
+    <nav class="menu">
+
+            <a class="menu__item" href="/"> <img class="menu__img" src="/images/home.svg" alt="home"></a>
+            <a class="menu__item" href="/fotogalery/"> <img class="menu__img" src="/images/album.svg" alt="album"></a>
+            <a class="menu__item" href="/recipes/"> <img class="menu__img" src="/images/fork-and-spoon.svg" alt="fork-and-spoon"></a>
+            <a class="menu__item" href="/journal/"> <img class="menu__img" src="/images/note.svg" alt="note"></a>
+    </nav>
+    
+    <main class="main">
+
+        {{ content | safe }}
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+        2022 Zlín
+        </p>
+    </footer>
+
+</body>
+</html>
