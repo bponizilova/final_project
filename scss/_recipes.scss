@@ -1,16 +1,8 @@
 @use 'settings';
 
 
-.new_album{
-    display: block;
-    font-size: 18px;
-    text-align: left;
-    color: settings.$text-and-borders;
-    text-decoration: none;
-    padding-bottom: calc(settings.$spacer / 3);
-}
 
-.fotogalery{
+.recipes{
     width: 100%;
     border: settings.$border-width solid settings.$text-and-borders;
     padding-top: settings.$spacer;
@@ -25,30 +17,31 @@
     &__last_added{
         position: relative;
     }
-    &__events{
+    &__starters{
         position: relative;
     }
-    &__anniversaries{
+    &__soups{
         position: relative;
     }
-    &__parties{
+    &__main-dishes{
         position: relative;
     }
-    &__easters{
+    &__desserts{
         position: relative;
     }
-    &__holidays{
+    &__salads{
         position: relative;
     }
-    &__christmases{
+    &__spreads{
         position: relative;
     }
-    &__for_fun{
+    &__drinks{
         position: relative;
     }
-    &__new_album{
+    &__conserves{
         position: relative;
     }
+
 
     &__img{
         width: 100%;
@@ -57,12 +50,11 @@
     &__link{
         width: 100%;
         padding-bottom: 15px;
- /*     background-image: radial-gradient(circle, rgba(black, 0.3), rgba(rgba(255, 255, 255, 0), 0)); */
-        background-image: linear-gradient(to top, rgba(black, 0.4), rgba(black,0)90%);
+        background-image: linear-gradient(to top, rgba(black, 0.4), rgba(black,0)95%);
         background-repeat: no-repeat;
         font-weight: 600;
-        text-transform: uppercase;
         color: settings.$primary;
+        text-transform: uppercase;
         text-decoration: none;
         position: absolute;
         bottom: 9.5px;
