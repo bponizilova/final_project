@@ -1,0 +1,19 @@
+@use 'settings';
+
+.menu{
+    border-top: settings.$border-width solid settings.$text-and-borders;
+    border-bottom: settings.$border-width solid settings.$text-and-borders;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item{
+        padding:0 20px;
+        color: settings.$text-and-borders;
+        flex: 1 1 auto;  
+}       
+            &__item:hover{
+            border-left: settings.$border-width solid settings.$text-and-borders;
+            border-right: settings.$border-width solid settings.$text-and-borders;
+}
+}

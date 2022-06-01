@@ -8,6 +8,7 @@ html {
 
 body {
   border: 1px solid black;
+  line-height: 1.5;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0;
@@ -30,7 +31,7 @@ h2 {
 .header__div {
   width: 100%;
   height: 200px;
-  background-color: #C4C4C4;
+  background-color: #D3B974;
 }
 
 .menu {
@@ -48,17 +49,6 @@ h2 {
 .menu__item:hover {
   border-left: 1px solid black;
   border-right: 1px solid black;
-}
-
-.footer {
-  border-top: 1px solid black;
-}
-.footer__text {
-  font-weight: 500;
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 10px auto;
 }
 
 .calendar {
@@ -120,4 +110,71 @@ h2 {
 .map__input {
   width: 100%;
   height: 100%;
+}
+
+.new_album {
+  padding: 30px 0;
+  display: block;
+  font-size: 18px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+
+.fotogalery__last_added {
+  position: relative;
+}
+.fotogalery__events {
+  position: relative;
+}
+.fotogalery__anniversaries {
+  position: relative;
+}
+.fotogalery__parties {
+  position: relative;
+}
+.fotogalery__easters {
+  position: relative;
+}
+.fotogalery__holidays {
+  position: relative;
+}
+.fotogalery__christmases {
+  position: relative;
+}
+.fotogalery__for_fun {
+  position: relative;
+}
+.fotogalery__new_album {
+  position: relative;
+}
+.fotogalery__img {
+  width: 100%;
+}
+.fotogalery__link {
+  width: 100%;
+  padding-bottom: 20px;
+  /*     
+         background-image: radial-gradient(circle, rgba(black, 0.3), rgba(rgba(255, 255, 255, 0), 0)); */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) 90%);
+  background-repeat: no-repeat;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  bottom: 9.5px;
+  left: 0;
+}
+
+.footer {
+  border-top: 1px solid black;
+  background-color: #C4C4C4;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */

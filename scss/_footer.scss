@@ -1,0 +1,16 @@
+@use 'settings';
+
+
+.footer{
+    border-top: settings.$border-width solid settings.$text-and-borders;
+    background-color: settings.$grey;
+    
+    &__text{
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+}

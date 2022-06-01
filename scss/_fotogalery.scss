@@ -1,0 +1,66 @@
+@use 'settings';
+
+.new_album{
+    padding: settings.$spacer 0;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    color: settings.$text-and-borders;
+    text-decoration: none;
+}
+
+.fotogalery{
+    &__last_added{
+        position: relative;
+    }
+    &__events{
+        position: relative;
+    }
+    &__anniversaries{
+        position: relative;
+    }
+    &__parties{
+        position: relative;
+    }
+    &__easters{
+        position: relative;
+    }
+    &__holidays{
+        position: relative;
+    }
+    &__christmases{
+        position: relative;
+    }
+    &__for_fun{
+        position: relative;
+    }
+    &__new_album{
+        position: relative;
+    }
+
+
+    &__img{
+        width: 100%;
+
+    }
+    &__link{
+        width: 100%;
+        padding-bottom: 20px;
+ /*     
+        background-image: radial-gradient(circle, rgba(black, 0.3), rgba(rgba(255, 255, 255, 0), 0)); */
+        background-image: linear-gradient(to top, rgba(black, 0.4), rgba(black,0)90%);
+        background-repeat: no-repeat;
+        font-weight: 600;
+        color: settings.$primary;
+        text-decoration: none;
+        position: absolute;
+        bottom: 9.5px;
+        left: 0;
+
+
+
+
+
+
+    }
+}

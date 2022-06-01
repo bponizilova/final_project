@@ -1,0 +1,30 @@
+@use 'settings';
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+body{
+    border: settings.$border-width solid settings.$text-and-borders;
+    line-height: 1.5;
+    font-family: settings.$font-base;
+    font-weight: 300;
+    margin: 0;
+    font-size: 25px;
+
+}
+main{
+    padding: 0 calc(settings.$spacer / 2);
+    text-align: center;
+}
+h2{
+    margin: 0;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: calc(settings.$spacer / 2);
+}

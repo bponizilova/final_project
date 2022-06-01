@@ -1,0 +1,66 @@
+@use 'settings';
+
+.calendar{
+    width: 100%;
+    border: settings.$border-width solid settings.$text-and-borders;
+    padding-top: settings.$spacer;
+    padding-left: calc(settings.$spacer / 3);
+    padding-right: calc(settings.$spacer / 3);
+    margin: settings.$spacer 0;  
+    &__title{
+        border-bottom: settings.$border-width solid settings.$text-and-borders;
+        padding-bottom: settings.$spacer;
+    }
+}
+    
+.to_do{
+    border: settings.$border-width solid settings.$text-and-borders;
+    margin: 0;
+    padding: settings.$spacer 0;
+    margin: settings.$spacer 0;
+    
+    &__table{
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        border-spacing: calc(settings.$spacer / 3);
+    }
+        &__table-field{
+            border: settings.$border-width solid settings.$text-and-borders;
+            padding: 8px calc(settings.$spacer / 2);
+    }
+
+}
+
+.places{
+    border: settings.$border-width solid settings.$text-and-borders;
+    margin: 0;
+    padding: settings.$spacer 0;
+    margin: settings.$spacer 0;
+    
+    &__table{
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        border-spacing: calc(settings.$spacer / 3);
+}
+    &__table-field{
+        border: settings.$border-width solid settings.$text-and-borders;
+        padding: 7px calc(settings.$spacer / 2);
+    }
+}
+
+.map {
+    border: settings.$border-width solid settings.$text-and-borders;
+    margin: 0;
+    padding-top: settings.$spacer;
+    padding-left: calc(settings.$spacer / 3);
+    padding-right: calc(settings.$spacer / 3);
+    margin: settings.$spacer 0;  
+    width: 100%;
+   
+    &__input{
+        width: 100%;
+        height: 100%;
+    }
+}

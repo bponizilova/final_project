@@ -1,0 +1,7 @@
+@use 'settings';
+
+.header__div{
+    width: 100%;
+    height: 200px;
+    background-color: settings.$complementary-dark;
+}
