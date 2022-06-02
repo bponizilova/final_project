@@ -1,0 +1,52 @@
+@use 'settings';
+
+.catalog {
+    font-size: 20px;
+    width: 100%;
+    border: settings.$border-width solid settings.$text-and-borders;
+    padding-top: settings.$spacer;
+    padding-left: calc(settings.$spacer / 3);
+    padding-right: calc(settings.$spacer / 3);
+    margin: settings.$spacer 0;
+    padding-bottom: settings.$spacer;
+
+
+    &__flex{
+        @media screen and (min-width: 600px){
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    &__title{
+        margin-bottom: settings.$spacer;
+    }
+
+    &__img{
+        margin-right: calc(settings.$spacer / 3);
+        width: 100%;
+        flex: 0 1 50%;
+    }
+
+    &__list{
+        padding: 0;
+        margin: 0;
+        flex: 1 1 40%;
+    }
+
+    &__item{        
+        list-style: none;
+        padding: 0;
+
+    }
+    &__link{
+        border-bottom: settings.$border-width solid settings.$text-and-borders;
+        display: block;
+        color: settings.$text-and-borders;
+        text-decoration: none;
+        text-align: start;
+        padding-left: settings.$spacer;
+
+    }
+}

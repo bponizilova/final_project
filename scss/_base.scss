@@ -9,6 +9,7 @@ html {
   }
 
 body{
+    min-height: 1vh;
     border: settings.$border-width solid settings.$text-and-borders;
     line-height: 1.5;
     font-family: settings.$font-base;
