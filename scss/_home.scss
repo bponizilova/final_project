@@ -1,6 +1,20 @@
 @use 'settings';
 
+.home{
+    &__grid{
+        @media screen and (min-width: 800px){
+            display: grid;
+            column-gap: calc(settings.$spacer / 3);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto;
 
+            grid-template-areas: 
+            "calendar calendar calendar to_do"
+            "places map map map";
+            font-size: 20px;           
+        }
+    }
+}
 
 .calendar{
     width: 100%;
@@ -9,10 +23,15 @@
     padding-left: calc(settings.$spacer / 3);
     padding-right: calc(settings.$spacer / 3);
     margin: settings.$spacer 0;  
+
+    grid-area: calendar;
+    overflow: hidden;
+
     &__title{
         border-bottom: settings.$border-width solid settings.$text-and-borders;
         padding-bottom: settings.$spacer;
     }
+
 }
     
 .to_do{
@@ -20,6 +39,8 @@
     margin: 0;
     padding: settings.$spacer 0;
     margin: settings.$spacer 0;
+
+    grid-area: to_do;
     
     &__table{
         width: 100%;
@@ -39,6 +60,8 @@
     margin: 0;
     padding: settings.$spacer 0;
     margin: settings.$spacer 0;
+
+    grid-area: places;
     
     &__table{
         width: 100%;
@@ -60,6 +83,8 @@
     padding-right: calc(settings.$spacer / 3);
     margin: settings.$spacer 0;  
     width: 100%;
+
+    grid-area: map;
    
     &__input{
         width: 100%;
