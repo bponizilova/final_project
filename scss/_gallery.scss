@@ -19,6 +19,7 @@
     
     &__grid{
         @media screen and (min-width: 600px) {
+            width:100%;
             display: grid;
             gap: calc(settings.$spacer / 3);
             grid-template-columns: 1fr 1fr;

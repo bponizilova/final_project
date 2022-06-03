@@ -233,6 +233,7 @@ h2 {
 }
 @media screen and (min-width: 600px) {
   .gallery__grid {
+    width: 100%;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;

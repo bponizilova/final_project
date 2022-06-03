@@ -1,0 +1,20 @@
+---
+layout: layouts/main_template.njk
+---
+<div class="catalog">
+
+    <h2 class="catalog__title">{{title}}</h2>
+
+    <div class="catalog__flex">
+        <div class="catalog__img">
+        <img class="catalog__img" src="{{img}}" alt="soup">
+        </div>
+
+        <div class="catalog__list">
+            
+                {{ content | safe }}
+
+        </div>
+    </div> 
+
+</div>
